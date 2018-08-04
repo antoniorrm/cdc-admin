@@ -8,7 +8,9 @@ class App extends Component {
 
   constructor() {
     super()
-    this.state = { lista: [{ nome: 'Antonio', email: 'antonio@gmail.com', senha: 'admin' }] }
+    this.state = { lista: [{ nome: 'Antonio', email: 'antonio@gmail.com', senha: 'admin' },
+    { nome: 'Antonio2', email: 'antonio@gmail.com', senha: 'admin' }] }
+    
   }
 
 
@@ -49,15 +51,15 @@ class App extends Component {
             <form className="pure-form pure-form-aligned">
               <div className="pure-control-group">
                 <label htmlFor="nome"> Nome </label>
-                <input id="nome" type="text" name="nome" value="" />
+                <input id="nome" type="text" name="nome"/>
               </div>
               <div className="pure-control-group">
                 <label htmlFor="email"> Email </label>
-                <input id="email" type="email" name="email" value="" />
+                <input id="email" type="email" name="email"/>
               </div>
               <div className="pure-control-group">
                 <label htmlFor="senha"> Senha </label>
-                <input id="senha" type="password" name="senha" value="" />
+                <input id="senha" type="password" name="senha"/>
               </div>
               <div className="pure-control-group">
                 <label></label>
